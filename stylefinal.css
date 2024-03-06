@@ -1,0 +1,56 @@
+html, body   {
+       font-family: garamond;
+	   text-align: center;
+	   background-color:#DED0EA;
+       }
+h1     {
+       color: #82647F;
+       }
+h2     {
+       color: #A2869D;
+       }	
+h3     {
+       color: #F3F3F5;
+       }
+h4     {
+       color: black;
+       }	   
+p	   {
+	   font-size: 150%;
+	   color: #3C3943;
+	   }
+dl	   {
+	   font-size: 150%;
+	   list-style-position: inside;
+	   }
+hr	   {
+	   height: 3px;
+	   }
+iframe	{
+		border-style: solid;
+		border-color: #F3F3F5;
+		border-width: 4px;
+		}
+a:link {
+       color: #82647F;
+       }
+a:visited {
+       color: #82647F;
+       }
+a:hover {
+		color: #F3F3F5;
+		}
+.FloatingBox	{
+		float: right;
+		width: 300px;
+		padding-top: 10px;
+		background-color: #F3F3F5;
+		border-width: 5px;
+		border-style: outset;
+		border-color: #82647F;
+		padding: 20px;
+		margin: 100px;
+		font-weight: bold;
+		font-size: 10pt;
+		color: white;
+				}

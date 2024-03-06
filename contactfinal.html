@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="stylefinal.css" />
+
+<script>
+function processForm()
+{
+	var e = document.testForm.fullname.value + "\n" + document.testForm.email.value
+	e = e + "\n\n" + document.testForm.subject.value + "\n"
+	
+	var a = ""
+	switch(document.testForm.priority.value)
+	{
+		case "none":
+			a = "No priority selected..."
+			break
+		case "urgent":
+			a = "This is QUITE a big deal!"
+			break
+		case "high":
+			a = "Pretty darn important!"
+			break
+		case "medium":
+			a = "Somewhat important?"
+			break
+		case "low":
+			a = "Yeah, this is not really important."
+			break
+		case "spam":
+			a = "After you read all that spam..."
+			break
+			
+	}
+	e = e + "Priority: " + a + "\n\n" + document.testForm.message.value
+	
+	document.testForm.sentMessage.value = e
+}
+</script>
+</head>
+
+<body>
+
+<hr color="#82647F">
+<br>
+<h1 style="font-family:garamond; color:#82647F">Contact</h1>
+<hr color="#DED0EA">
+<hr color="#DED0EA">
+<hr color="#F3F3F5" width="200">
+<hr color="#DED0EA">
+<hr color="#DED0EA">
+
+
+<p>
+For any questions, inqueries, concerns, and so on, <a href="mailto:arthelen@usf.edu">here</a> is<br> the email link which will
+probably open your device's default email software. <br>However, if you prefer, you may fill out the
+Contact Form below!
+</p>
+
+<br>
+<br>
+
+<form name="testForm">
+<table align="center" style="padding-right:100px">
+
+<tr>
+<th colspan="2" style="color:#A2869D; font-size:1.2em; padding-left:100px"><i>Contact Form</i></th>
+</tr>
+
+<tr>
+<td>Full name: </td>	<td><input type="text" size="70" name="fullname"></td>
+</tr>
+
+<tr>
+<td>Email address: </td>	<td><input type="text" size="70" name="email"></td>
+</tr>
+
+<tr>
+<td>Subject: </td>	<td><input type="text" size="70" name="subject"></td>
+</tr>
+
+<tr>
+<td>Priority: </td>
+<td><select name="priority" id="priority">
+	<option value="none">Please choose a priority...</option>
+	<option value="urgent">URGENT!</option>
+	<option value="high">High</option>
+	<option value="medium">Medium</option>
+	<option value="low">Low</option>
+	<option value="spam">Read after reading spam!</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td valign="top">Message: </td>
+<td><textarea name="message" rows="4" cols="69"></textarea></td>
+</tr>
+
+<tr>
+<td><input type="reset" value="Clear form"></td>
+<td><input type="button" value="Send message!" onClick="processForm()"></td>
+</tr>
+
+
+<tr>	<td><br><br></td>
+</tr>
+
+<tr>
+<th colspan="2" style="color:#F3F3F5; font-size:1.2em; padding-left:70px">Here is your message displayed below:</th>
+</tr>
+
+<tr>
+<td valign="top">Message sent:</td>
+<td><textarea name="sentMessage" rows="12" cols="69" readonly></textarea></td>
+</tr>
+
+</table>
+</form>
+
+<br>
+<br>
+
+<a href="homefinal.html" style="font-size:90%">Click here to jump back to the home page!</a>
+
+<br>
+<br>
+<br>
+
+<hr color="#82647F">
+
+</body>
+</html>
